@@ -1,8 +1,7 @@
 import { defineConfig } from 'astro/config';
 import webmanifest from 'astro-webmanifest';
 
-/** @type {import('tailwindcss').Config} */
-export default {
+export default defineConfig({
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {},
@@ -18,7 +17,7 @@ export default {
 		  /**
 		   * optional
 		   **/
-		//   icon: 'src/images/your-icon.svg', // source for favicon & icons
+		  icon: 'public/favicon.svg', // source for favicon & icons
 	
 		  short_name: 'Bergljots',
 		  description: 'På vei ut døra i Bergljots',
@@ -28,4 +27,4 @@ export default {
 		  display: 'standalone',
 		}),
 	  ],
-}
+});
