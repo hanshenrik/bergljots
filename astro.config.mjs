@@ -21,9 +21,10 @@ export default defineConfig({
       short_name: "Bergljots",
       description: "På vei ut døra i Bergljots",
       start_url: "/",
-      theme_color: "#3367D6",
-      background_color: "#3367D6",
-      display: "standalone",
+      theme_color: "#33B8D6",
+      background_color: "#33B8D6",
+      display: "minimal-ui",
+      orientation: "landscape"
     }),
   ],
 });
