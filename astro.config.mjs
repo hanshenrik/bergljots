@@ -22,7 +22,7 @@ export default defineConfig({
       description: "På vei ut døra i Bergljots",
       start_url: "/",
       theme_color: "#33B8D6",
-      background_color: "#33B8D6",
+      background_color: "#000000",
       display: "minimal-ui",
       orientation: "landscape"
     }),
