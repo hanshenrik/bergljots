@@ -11,13 +11,25 @@
     <title>På vei ut døra i Bergljots</title>
   </head>
   <body class="h-svh relative">
-    <div class="absolute top-0 right-0 px-2 py-1 text-white font-bold tabular-nums text-2xl" id="clock" />
-    <div class="grid grid-cols-1 sm:grid-cols-2 h-svh w-full bg-black pt-[16px] overflow-clip">
+    <div
+      class="absolute top-0 right-0 px-2 py-1 text-white font-bold tabular-nums text-2xl"
+      id="clock"
+    >
+    </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 h-svh w-full bg-black pt-[16px] overflow-clip"
+    >
       <div class="overflow-clip bg-black">
-        <iframe id="entur" src="https://tavla.beta.entur.no/su8NCYaVLDINMWhQ6mbb" class="h-[431px] -mt-[72px] w-full" />
+        <iframe
+          id="entur"
+          src="https://tavla.beta.entur.no/su8NCYaVLDINMWhQ6mbb"
+          class="h-[431px] -mt-[72px] w-full"></iframe>
       </div>
       <div class="overflow-clip">
-        <iframe id="yr" src="https://www.yr.no/nb/innhold/10-995192/card.html?mode=dark" class="overflow-clip h-[431px] w-full rounded-lg" />
+        <iframe
+          id="yr"
+          src="https://www.yr.no/nb/innhold/10-995192/card.html?mode=dark"
+          class="overflow-clip h-[431px] w-full rounded-lg"></iframe>
       </div>
     </div>
   </body>
@@ -25,12 +37,12 @@
 
 <script>
   const currentTime = () => {
-    const time = Intl.DateTimeFormat('nb-NO', {
-      hour: 'numeric',
-      minute: 'numeric',
-      second: 'numeric',
+    const time = Intl.DateTimeFormat("nb-NO", {
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
     }).format(new Date());
-    document.getElementById('clock').innerText = time;
+    document.getElementById("clock").innerText = time;
   };
   setInterval(() => currentTime(), 1000);
 </script>

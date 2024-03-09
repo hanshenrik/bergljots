@@ -12,15 +12,15 @@ export default defineConfig({
       description: "På vei ut døra i Bergljots",
       icons: [
         {
-          "src": "/android-chrome-192x192.png",
-          "sizes": "192x192",
-          "type": "image/png"
+          src: "/android-chrome-192x192.png",
+          sizes: "192x192",
+          type: "image/png",
         },
         {
-          "src": "/android-chrome-512x512.png",
-          "sizes": "512x512",
-          "type": "image/png"
-        }
+          src: "/android-chrome-512x512.png",
+          sizes: "512x512",
+          type: "image/png",
+        },
       ],
       short_name: "Bergljots",
       description: "På vei ut døra i Bergljots",
