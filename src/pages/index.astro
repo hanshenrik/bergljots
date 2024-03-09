@@ -10,7 +10,8 @@
     <meta name="generator" content={Astro.generator} />
     <title>På vei ut døra i Bergljots</title>
   </head>
-  <body class="h-svh">
+  <body class="h-svh relative">
+    <div class="absolute top-0 right-0 px-2 py-1 text-white font-bold tabular-nums text-2xl" id="clock" />
     <div class="grid grid-cols-1 sm:grid-cols-2 h-svh w-full bg-black pt-[16px] overflow-clip">
       <div class="overflow-clip bg-black">
         <iframe id="entur" src="https://tavla.beta.entur.no/su8NCYaVLDINMWhQ6mbb" class="h-[431px] -mt-[72px] w-full" />
@@ -21,3 +22,15 @@
     </div>
   </body>
 </html>
+
+<script>
+  const currentTime = () => {
+    const time = Intl.DateTimeFormat('nb-NO', {
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric',
+    }).format(new Date());
+    document.getElementById('clock').innerText = time;
+  };
+  setInterval(() => currentTime(), 1000);
+</script>
